@@ -1,0 +1,15 @@
+<div class="jumbotron col-sm-6 col-sm-offset-3 text-center transparent-bg">
+    <h1 class="text-head">Second Player</h1>
+    <div class="col-sm-12">
+        <form>
+            <div class="form-group">
+                <input class='form-control' [(ngModel)]="secondUser" name="second" placeholder='Github Username' type='text' />
+            </div>
+            <div class="form-group col-sm-4 col-sm-offset-4">
+                <button class="btn btn-block btn-success" type="submit" routerLink="/confirm" [queryParams]="{firstUser: firstUser,secondUser :secondUser }">
+          Continue
+      </button>
+            </div>
+        </form>
+    </div>
+</div>

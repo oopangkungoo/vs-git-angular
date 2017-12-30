@@ -1,0 +1,37 @@
+<div class="jumbotron col-sm-12 text-center transparent-bg">
+    <h1 class="text-head">Confirm Players</h1>
+    <div class="col-md-12">
+        <div class="col-md-6">
+            <p>PLAYER 1</p>
+            <img *ngIf="firstUserData" [src]="firstUserData.avatar_url" class="img-circle">
+            <div class="row">
+                <h2 *ngIf="firstUserData">{{firstUserData.name}}</h2>
+            </div>
+            <div class="row">
+                <p *ngIf="firstUserData"> Username : {{firstUserData.login}}</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <p>PLAYER 2</p>
+            <img *ngIf="SecondUserData" [src]="SecondUserData.avatar_url" class="img-circle">
+            <div class="row">
+                <h2 *ngIf="SecondUserData">{{SecondUserData.name}}</h2>
+            </div>
+            <div class="row">
+                <p *ngIf="SecondUserData"> Username : {{SecondUserData.login}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class=" col-md-2 col-md-offset-4">
+            <button class="btn btn-block btn-success" type="submit" (click)="battle()">
+        Continue
+    </button>
+        </div>
+        <div class=" col-md-2">
+            <button class="btn btn-block btn-danger" type="submit" routerLink="/first">
+            Reset
+    </button>
+        </div>
+    </div>
