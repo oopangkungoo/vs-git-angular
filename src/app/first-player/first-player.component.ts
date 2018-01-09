@@ -1,3 +1,4 @@
+import {UserModel} from '../model/user-mode';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,9 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class FirstPlayerComponent implements OnInit {
 
   constructor() { }
-
+  UserModel = new UserModel();
   username: string;
-  
   ngOnInit() {
   }
 

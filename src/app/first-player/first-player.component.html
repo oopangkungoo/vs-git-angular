@@ -3,7 +3,7 @@
     <div class="col-sm-12">
         <form>
             <div class="form-group">
-                <input class='form-control' [(ngModel)]="username" name="fitst" placeholder='Github Username' type='text' />
+                <input appDirective class='form-control' [(ngModel)]="username" name="fitst" placeholder='Github Username' type='text' />
             </div>
             <div class="form-group col-sm-4 col-sm-offset-4">
                 <button class="btn btn-block btn-success" type="submit" routerLink="/second" [queryParams]="{user: username}">
@@ -11,5 +11,8 @@
         </button>
             </div>
         </form>
+    </div>
+    <div class="col-sm-12">
+        <app-detail [text]="username" [Model]="UserModel"></app-detail>
     </div>
 </div>

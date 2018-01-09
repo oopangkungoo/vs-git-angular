@@ -11,6 +11,11 @@ import { WinComponent } from './win/win.component';
 import { AppRoutingModule } from './app.routing';
 import { AppService } from './app.service';
 import {  HttpClientModule } from '@angular/common/http';
+import { DetailComponent } from './first-player/detail/detail.component';
+
+import { AppDirective } from './app.directive';
+import { AppPipe } from './app.pipe';
+import { WindetailComponent } from './win/windetail/windetail.component';
 
 
 
@@ -22,6 +27,11 @@ import {  HttpClientModule } from '@angular/common/http';
     SecondPlayerComponent,
     ConfirmPlayerComponent,
     WinComponent,
+    DetailComponent,
+    AppDirective,
+    AppPipe,
+    WindetailComponent,
+
   ],
   imports: [
     BrowserModule,
